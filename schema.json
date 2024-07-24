@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+    "type": "object",
+    "properties": {
+      "readme": {
+        "type": "string",
+        "title": "Open Sora Plan v1.2",
+        "author": "Open Sora Plan Team",
+        "code": "https://github.com/PKU-YuanGroup/Open-Sora-Plan",
+        "tags": [
+          "Text to Video"
+        ],
+        "widget": "readme"
+      },
+      "prompt": {
+        "type": "string",
+        "description": "Prompt",
+        "widget": "textarea"
+      },
+      "negative_prompt": {
+        "type": "string",
+        "description": "Negative Prompt",
+        "widget": "textarea"
+      },
+      "style": {
+        "type": "string",
+        "description": "Style",
+        "widget": "textarea"
+      },
+      "use_negative_prompt": {
+        "type": "boolean",
+        "description": "Use Negative Prompt"
+      },
+      "seed": {
+        "type": "number",
+        "description": "Seed"
+      },
+      "schedule": {
+        "type": "string",
+        "description": "Schedule",
+        "widget": "textarea"
+      },
+      "guidance_scale": {
+        "type": "number",
+        "description": "Guidance Scale"
+      },
+      "num_inference_steps": {
+        "type": "integer",
+        "description": "Num Inference Steps"
+      },
+      "randomize_seed": {
+        "type": "boolean",
+        "description": "Randomize Seed"
+      },
+      "num_frames": {
+        "type": "integer",
+        "description": "Width"
+      },
+      "width": {
+        "type": "integer",
+        "description": "Width"
+      },
+      "height": {
+        "type": "integer",
+        "description": "Height"
+      }
+    },
+    "buttons": [
+      {
+        "id": "enter",
+        "label": "🥪 Enter"
+      }
+    ]
+  }

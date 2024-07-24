@@ -1,0 +1,14 @@
+{
+    "prompt": "An octopus and an astronaut have tea at a coral table under the ocean, surrounded by glowing jellyfish and vibrant marine life.",
+    "negative_prompt": "blurry",
+    "style": "(Default)",
+    "use_negative_prompt": true,
+    "seed": 0,
+    "schedule": "EulerA-Solver",
+    "guidance_scale": 4.5,
+    "num_inference_steps": 25,
+    "randomize_seed": false,
+    "num_frames": 93,
+    "width": 1280,
+    "height": 720
+}
