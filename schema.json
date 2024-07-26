@@ -54,7 +54,7 @@
       },
       "num_frames": {
         "type": "integer",
-        "description": "Width"
+        "description": "Num Frames"
       },
       "width": {
         "type": "integer",

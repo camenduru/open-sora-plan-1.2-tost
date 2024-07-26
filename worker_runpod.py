@@ -76,9 +76,6 @@ style_list = [
 
 MAX_SEED = np.iinfo(np.int32).max
 
-SPEED_UP_T5 = True
-USE_TORCH_COMPILE = True
-
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 styles = {k["name"]: (k["prompt"], k["negative_prompt"]) for k in style_list}
@@ -121,13 +118,6 @@ if torch.cuda.is_available():
     pipe = OpenSoraPipeline(vae=vae, text_encoder=text_encoder, tokenizer=tokenizer, scheduler=scheduler, transformer=transformer)
     pipe.to(device)
     print("Loaded on Device!")
-
-    if SPEED_UP_T5:
-        pipe.text_encoder.to_bettertransformer()
-
-    if USE_TORCH_COMPILE:
-        pipe.transformer = torch.compile(pipe.transformer, mode="reduce-overhead", fullgraph=True)
-        print("Model Compiled!")
 
 @torch.no_grad()
 @torch.inference_mode()
