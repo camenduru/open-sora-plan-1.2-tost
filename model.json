@@ -1,6 +1,6 @@
 {
-    "prompt": "An octopus and an astronaut have tea at a coral table under the ocean, surrounded by glowing jellyfish and vibrant marine life.",
-    "negative_prompt": "blurry",
+    "prompt": "a woman with a vintage hairstyle and bright red lipstick, gazing seductively into the camera, the background blurred to keep the focus solely on her.",
+    "negative_prompt": "watermark",
     "style": "(Default)",
     "use_negative_prompt": true,
     "seed": 0,
