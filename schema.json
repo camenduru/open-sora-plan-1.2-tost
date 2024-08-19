@@ -7,7 +7,7 @@
       "title": "Open Sora Plan v1.2",
       "author": "Open Sora Plan Team",
       "code": "https://github.com/PKU-YuanGroup/Open-Sora-Plan",
-      "api": "https://github.com/camenduru/tost-api-examples",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/open-sora-plan-1.2.ipynb",
       "tags": [
         "Text to Video"
       ],
