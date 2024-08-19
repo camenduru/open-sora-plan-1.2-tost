@@ -1,185 +1,186 @@
 {
-    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
-    "type": "object",
-    "properties": {
-      "readme": {
-        "type": "string",
-        "title": "Open Sora Plan v1.2",
-        "author": "Open Sora Plan Team",
-        "code": "https://github.com/PKU-YuanGroup/Open-Sora-Plan",
-        "tags": [
-          "Text to Video"
-        ],
-        "widget": "readme"
-      },
-      "prompt": {
-        "type": "string",
-        "description": "Prompt",
-        "widget": "textarea"
-      },
-      "negative_prompt": {
-        "type": "string",
-        "description": "Negative Prompt",
-        "widget": "textarea"
-      },
-      "style": {
-        "type": "string",
-        "widget": "select",
-        "description": "Style",
-        "oneOf": [
-          {
-            "description": "(Default)",
-            "enum": [
-              "(Default)"
-            ]
-          },
-          {
-            "description": "Cinematic",
-            "enum": [
-              "Cinematic"
-            ]
-          },
-          {
-            "description": "Photographic",
-            "enum": [
-              "Photographic"
-            ]
-          },
-          {
-            "description": "Anime",
-            "enum": [
-              "Anime"
-            ]
-          },
-          {
-            "description": "Manga",
-            "enum": [
-              "Manga"
-            ]
-          },
-          {
-            "description": "Digital Art",
-            "enum": [
-              "Digital Art"
-            ]
-          },
-          {
-            "description": "Pixel art",
-            "enum": [
-              "Pixel art"
-            ]
-          },
-          {
-            "description": "Fantasy art",
-            "enum": [
-              "Fantasy art"
-            ]
-          },
-          {
-            "description": "Neonpunk",
-            "enum": [
-              "Neonpunk"
-            ]
-          },
-          {
-            "description": "3D Model",
-            "enum": [
-              "3D Model"
-            ]
-          }
-        ],
-        "default": "(Default)"
-      },
-      "use_negative_prompt": {
-        "type": "boolean",
-        "description": "Use Negative Prompt"
-      },
-      "seed": {
-        "type": "number",
-        "description": "Seed"
-      },
-      "schedule": {
-        "type": "string",
-        "widget": "select",
-        "description": "Schedule",
-        "oneOf": [
-          {
-            "description": "PNDM-Solver",
-            "enum": [
-              "PNDM-Solver"
-            ]
-          },
-          {
-            "description": "DDIM-Solver",
-            "enum": [
-              "DDIM-Solver"
-            ]
-          },
-          {
-            "description": "Euler-Solver",
-            "enum": [
-              "Euler-Solver"
-            ]
-          },
-          {
-            "description": "DDPM-Solver",
-            "enum": [
-              "DDPM-Solver"
-            ]
-          },
-          {
-            "description": "EulerA-Solver",
-            "enum": [
-              "EulerA-Solver"
-            ]
-          },
-          {
-            "description": "DEISM-Solver",
-            "enum": [
-              "DEISM-Solver"
-            ]
-          },
-          {
-            "description": "SA-Solver",
-            "enum": [
-              "SA-Solver"
-            ]
-          }
-        ],
-        "default": "EulerA-Solver"
-      },
-      "guidance_scale": {
-        "type": "number",
-        "description": "Guidance Scale"
-      },
-      "num_inference_steps": {
-        "type": "integer",
-        "description": "Num Inference Steps"
-      },
-      "randomize_seed": {
-        "type": "boolean",
-        "description": "Randomize Seed"
-      },
-      "num_frames": {
-        "type": "integer",
-        "description": "Num Frames",
-        "readOnly": "true"
-      },
-      "width": {
-        "type": "integer",
-        "description": "Width",
-        "readOnly": "true"
-      },
-      "height": {
-        "type": "integer",
-        "description": "Height",
-        "readOnly": "true"
-      }
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "Open Sora Plan v1.2",
+      "author": "Open Sora Plan Team",
+      "code": "https://github.com/PKU-YuanGroup/Open-Sora-Plan",
+      "api": "https://github.com/camenduru/tost-api-examples",
+      "tags": [
+        "Text to Video"
+      ],
+      "widget": "readme"
     },
-    "buttons": [
-      {
-        "id": "enter",
-        "label": "🥪 Enter"
-      }
-    ]
-  }
+    "prompt": {
+      "type": "string",
+      "description": "Prompt",
+      "widget": "textarea"
+    },
+    "negative_prompt": {
+      "type": "string",
+      "description": "Negative Prompt",
+      "widget": "textarea"
+    },
+    "style": {
+      "type": "string",
+      "widget": "select",
+      "description": "Style",
+      "oneOf": [
+        {
+          "description": "(Default)",
+          "enum": [
+            "(Default)"
+          ]
+        },
+        {
+          "description": "Cinematic",
+          "enum": [
+            "Cinematic"
+          ]
+        },
+        {
+          "description": "Photographic",
+          "enum": [
+            "Photographic"
+          ]
+        },
+        {
+          "description": "Anime",
+          "enum": [
+            "Anime"
+          ]
+        },
+        {
+          "description": "Manga",
+          "enum": [
+            "Manga"
+          ]
+        },
+        {
+          "description": "Digital Art",
+          "enum": [
+            "Digital Art"
+          ]
+        },
+        {
+          "description": "Pixel art",
+          "enum": [
+            "Pixel art"
+          ]
+        },
+        {
+          "description": "Fantasy art",
+          "enum": [
+            "Fantasy art"
+          ]
+        },
+        {
+          "description": "Neonpunk",
+          "enum": [
+            "Neonpunk"
+          ]
+        },
+        {
+          "description": "3D Model",
+          "enum": [
+            "3D Model"
+          ]
+        }
+      ],
+      "default": "(Default)"
+    },
+    "use_negative_prompt": {
+      "type": "boolean",
+      "description": "Use Negative Prompt"
+    },
+    "seed": {
+      "type": "number",
+      "description": "Seed"
+    },
+    "schedule": {
+      "type": "string",
+      "widget": "select",
+      "description": "Schedule",
+      "oneOf": [
+        {
+          "description": "PNDM-Solver",
+          "enum": [
+            "PNDM-Solver"
+          ]
+        },
+        {
+          "description": "DDIM-Solver",
+          "enum": [
+            "DDIM-Solver"
+          ]
+        },
+        {
+          "description": "Euler-Solver",
+          "enum": [
+            "Euler-Solver"
+          ]
+        },
+        {
+          "description": "DDPM-Solver",
+          "enum": [
+            "DDPM-Solver"
+          ]
+        },
+        {
+          "description": "EulerA-Solver",
+          "enum": [
+            "EulerA-Solver"
+          ]
+        },
+        {
+          "description": "DEISM-Solver",
+          "enum": [
+            "DEISM-Solver"
+          ]
+        },
+        {
+          "description": "SA-Solver",
+          "enum": [
+            "SA-Solver"
+          ]
+        }
+      ],
+      "default": "EulerA-Solver"
+    },
+    "guidance_scale": {
+      "type": "number",
+      "description": "Guidance Scale"
+    },
+    "num_inference_steps": {
+      "type": "integer",
+      "description": "Num Inference Steps"
+    },
+    "randomize_seed": {
+      "type": "boolean",
+      "description": "Randomize Seed"
+    },
+    "num_frames": {
+      "type": "integer",
+      "description": "Num Frames",
+      "readOnly": "true"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Width",
+      "readOnly": "true"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Height",
+      "readOnly": "true"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}
