@@ -19,4 +19,4 @@ https://pku-yuangroup.github.io/Open-Sora-Plan/
 
 
 ### 🏢 Sponsor
-https://runpod.io
+[https://runpod.io](https://runpod.io?ref=iqi9iy8y)
